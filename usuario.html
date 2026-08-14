@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+    <head>
+         <link rel="stylesheet" href="estilos.css"> 
+    </head>
+           <body class="pagina-usuario">
+            <header class="encabezado">     
+                <!---Logo y Cuadro de Busqueda--->
+    <img class="logo" src="Imagenes/logo Street Wise.png" alt="Street Wise" width="140px" height="140px">
+    <div class="buscador">    
+    </div>  
+    <input type="text" name="busqueda" placeholder="Buscar...">
+    <div class="menu-movil">
+        ☰
+    </div>
+    <!------------iconos--------->
+     <div class="Iconos">
+        <a href="carrito compras.html">
+            <img src="iconos/carrito-de-compras.png" alt="Carrito de Compras" >
+        </a>
+        <a href="index.html">
+            <img src="iconos/casa.png" alt="inicio" width="65px" height="65px">
+        </a>
+    </div>
+    </header>
+    <main>
+    <div class="contenedor-usuario">
+      <h1 class="h1-usuario"> 
+        UNIRTE A STREET WISE<br>
+        Inciar secion
+    </h1>
+    <form action="login_proceso.php" method="POST">
+      <table class="tabla-usuario">
+         <tr>
+            <td>
+               Ingresa tu correo
+            </td>
+            <td>
+                <input class="buscador-usuario" type="email" name="email" required>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               Ingresa tu contraseña
+            </td>
+            <td>
+                <input class="buscador-usuario" type="password" name="password" required>
+            </td>
+         </tr>
+         <tr>
+                    <td>
+                        Codigo Administrador
+                    </td>
+                    <td>
+                        <input class="buscador-usuario" type="text" name="admin_code" placeholder="Solo llenar si eres administrador">
+                    </td>
+                </tr>
+    </table>
+    <button type="submit" class="boton">INICIAR</button>
+    </form>
+    <br>
+    </div>
+    <div class="texto-registrar">   
+    </p>¿No tienes cuenta? Registrate</p>
+    <button class="boton-registrar">
+    <a href="Registrar.html">
+    Registrate
+    </a>
+    </button>
+    </div>
+    </main>
+     <!-------lOGOTIPOS DE REDES SOCIALES------>
+    <div class="redes-sociales">
+    <a href="https://web.facebook.com/profile.php?id=61560991767742&amp;_rdc=1&amp;_rdr#" target="_blank">
+        <img src="iconos/facebook.png" alt="Facebook" width="40px" height="40px">
+    </a>
+    <a href="https://www.instagram.com/stree_twise15/" target="_blank">
+        <img src="iconos/instagram.png" alt="Instagram" width="40px" height="40px">
+    </a>
+    <a href="mailto:streetwise015@gmail.com" target="_blank">
+        <img src="iconos/correo.png" alt="Gmail" width="40px" height="40px">
+    </a>
+    </div>
+    <footer>
+            <p class="footer">© 2024 Street Wise. Todos los derechos reservados.</p>
+        </footer>
+        <script src="script.js"></script>
+     </body>
+</html>

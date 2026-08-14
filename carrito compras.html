@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+    <head>
+        <link rel="stylesheet" href="estilos.css">
+    </head>    
+       <body>
+            <header class="encabezado">   
+                <!---Logo y Cuadro de Busqueda--->
+    <img class="logo" src="Imagenes/logo Street Wise.png" alt="Street Wise" width="140px" height="140px">
+    <div class="buscador">  
+    </div>    
+    <input type="text" name="busqueda" placeholder="Buscar...">
+    <div class="menu-movil">
+        ☰
+    </div>
+    <!------------Iconos--------->
+    <div class="Iconos">
+        <a href="Usuario.html">
+            <img src="iconos/usuario.png" alt="Usuario" >
+        </a>
+        <a href="index.html">
+            <img src="iconos/casa.png" alt="inicio" width="65px" height="65px">
+        </a>
+    </div>
+</header>
+     <h1 class="h1"> COMPRAS</h1>
+    <div class="redes-sociales">
+    <a href="https://web.facebook.com/profile.php?id=61560991767742&amp;_rdc=1&amp;_rdr#" target="_blank">
+        <img src="iconos/facebook.png" alt="Facebook" width="40px" height="40px">
+    </a>
+    <a href="https://www.instagram.com/stree_twise15/" target="_blank">
+        <img src="iconos/instagram.png" alt="Instagram" width="40px" height="40px">
+    </a>
+    <a href="mailto:streetwise015@gmail.com" target="_blank">
+        <img src="iconos/correo.png" alt="Gmail" width="40px" height="40px">
+    </a>
+    </div>
+    <main>
+        <!--------CONTENEDOR DE COMPRAS(PADRE)-------->
+        <div class="Contenedor-compras"><div  class="informacion-compras">
+            <!-----------CONTENEDOR DE INFORMACION DE COMPRAS IZQUIERDA-------->
+             <h1 class="texto-compras"> Informacion de tu producto </h1>
+        <table class="tabla-compras">
+            <tr>
+                <td>CORREO ELECRONICO:
+                    <input class="buscador-carrito" name="correo" required>
+                </td>
+            </tr>
+            <tr>
+                <td>DOCUMENTO:
+                    <input class="buscador-carrito" name="documento" required>
+                </td>
+            </tr>
+             <tr>
+                <td>DIRECCION
+                    <input class="buscador-carrito" name="direccion" required>
+                </td>
+            </tr>
+            <tr>
+                <td>ESPECIFICACIONES:
+                    <input class="buscador-carrito" name="especificaciones" required placeholder="CASA, CONJUNTO, APARTAMENTO, ETC">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+        <!----------METODOS DE PAGO-------->
+        <div class="metodos-pago">
+            <h3>METODOS DE PAGO</h3>
+            <P>NEQUI|TARJETA|EFECTIVO</P>
+            <a href="Gracias.html">
+            <button class="boton-pagar">Comprar</button>
+            </a>
+        </div>
+        <!--------COLUMNA DERECHA RESUMEN DEL PEDIDO -->
+    </div> 
+    <div class="informacion-pago">
+            <h2>INFORMACION DEL PEDIDO</h2>
+            <div class="detalles-pedido">
+            <p>Cantidad: 2</p>
+            <p>Precio: $50.000</p>
+            <p>Total: $100.000</p>
+            <button class="boton-eliminar">Vaciar Carrito</button>
+            <div id="contenedor-items-producto"></div>
+            <div id="contenedor-total-carrito" style="margin-top: 20px; padding-top: 15px; border-top: 2px dashed black; width: 100%;"></div>
+    </div>
+        </div></div>
+        <footer>
+            <p class="footer">© 2024 Street Wise. Todos los derechos reservados.</p>
+        </footer>
+        <script src="script.js"></script>
+     </body>
+</html>

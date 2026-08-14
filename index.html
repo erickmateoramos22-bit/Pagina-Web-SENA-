@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+    <head>
+        <link rel="stylesheet" href="estilos.css">
+    </head>    
+        <body>
+            <header class="encabezado">   
+                <!---Logo y Cuadro de Busqueda--->
+    <img class="logo" src="Imagenes/logo Street Wise.png" alt="Street Wise" width="140px" height="140px">
+    <!----cuadro de texto----->
+    <!---Formulario del buscador-->
+    <!-----envia la palabra escrita por el usuario al servidor de flask
+    mediante una solicitud GET----->
+    <form class="buscador" action="catalogo.php" method="GET">    
+    <!----caja donde el usuario escribe la búsqueda-->
+    <input 
+    id="buscar"
+    class="input_buscador"
+    type="text"
+    name="buscar"
+    placeholder="Buscar..."
+    autocomplete="off"
+    required>    
+    
+    <!---botón de búsqueda--->
+    <button class="boton_busqueda" type="submit">Buscar</button>
+    <!----contenedor de busquedas-->
+    <div id="sugerencias">
+    </div>
+    </form>
+    <div class="menu-movil">
+        ☰
+    </div>
+    <!------------Iconos--------->
+    <div class="Iconos">
+        <a href="carrito compras.html">
+            <img src="iconos/carrito-de-compras.png" alt="Carrito de Compras" >
+        </a>
+        <a href="Usuario.html">
+            <img src="iconos/usuario.png" alt="Usuario" >
+        </a>
+    </div>
+    </header>
+    <main>
+<h1 class="h1">STREET WISE</h1>
+    <!------Menu Hombre---------->
+    <div class="contenedor-menus">
+    <select name="Hombre" id="hombre">
+        <option value="">HOMBRE</option>
+        <option value="catalogo.php?cat=3">ACCESORIOS</option>
+        <option value="catalogo.php?cat=4">Camisas</option>
+        <option value="catalogo.php?cat=5">Pantalones</option>
+        <option value="catalogo.php?cat=6">Chaquetas</option>
+        <option value="catalogo.php?cat=7"> Busos</option>
+        <option value="catalogo.php?cat=8">Sudaderas</option>
+    </select>
+    <!------------Menu Mujer ----------->
+    <select name="Mujer" id="mujer">
+        <option value="">MUJER</option>
+        <option value="catalogo.php?cat=9">Accesorios</option>
+        <option value="catalogo.php?cat=10">Camisas</option>
+        <option value="catalogo.php?cat=11">Pantalones</option>
+        <option value="catalogo.php?cat=12">Chaquetas</option>
+        <option value="catalogo.php?cat=13"> Busos</option>
+        <option value="catalogo.php?cat=14">Sudaderas</option>
+    </select>
+    </div>
+    <!--------------Imagenes---------------->
+    <div class="contenedor-imagenes">
+        <img src="Imagenes/Outfit 1.jpg" alt="Imagen 1" width="350px" height="550px">
+        <img src="Imagenes/Outfit 2.jpg" alt="Imagen 2" width="350px" height="550px">
+        <img src="Imagenes/Outfit 3.jpg" alt="Imagen 3" width="350px" height="550px">
+        <img src="Imagenes/Outfit 4.jpg" alt="Imagen 4" width="350px" height="550px">
+        <img src="Imagenes/Outfit 5.jpg" alt="Imagen 5" width="350px" height="550px">
+        </div>  
+        <!-------lOGOTIPOS DE REDES SOCIALES------>
+    <div class="redes-sociales">
+    <a href="https://web.facebook.com/profile.php?id=61560991767742&amp;_rdc=1&amp;_rdr#" target="_blank">
+        <img src="iconos/facebook.png" alt="Facebook" width="40px" height="40px">
+    </a>
+    <a href="https://www.instagram.com/stree_twise15/" target="_blank">
+        <img src="iconos/instagram.png" alt="Instagram" width="40px" height="40px">
+    </a>
+    <a href="mailto:streetwise015@gmail.com" target="_blank">
+        <img src="iconos/correo.png" alt="Gmail" width="40px" height="40px">
+    </a>
+    </div>
+    </main>
+        <footer>
+            <p class="footer">© 2024 Street Wise. Todos los derechos reservados.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

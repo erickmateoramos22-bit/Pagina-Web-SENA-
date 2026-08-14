@@ -1,0 +1,595 @@
+@font-face {   
+            font-family: 'Street Wise';
+            src: url('Slackey-Regular.ttf');
+        }
+        /*encabezado*/
+        .h1 {    
+            font-family : 'Street Wise';
+            font-size:clamp(40px, 7vw, 90px);
+            color:rgb(3, 3, 3);
+            text-align:center;
+            margin-top: 40px;
+            margin-bottom: 60px;
+        }
+        /*logotipo*/
+        .logo
+        {
+        width:170px;
+        height: auto;
+        }
+        /*barra de busqueda*/
+        input {
+            height:40px;
+            border-radius: 10px 10px 10px 10px;
+            border:1px solid black;
+            padding-left: 10px;
+            font-size: 16px;
+            width: 50%;
+            cursor: pointer;
+            flex:1;
+        }
+        /*=============================
+        BUSCADOR
+        =============================*/
+
+    .buscador{
+    display:flex;
+    align-items:center;
+    flex:1;
+    max-width:700px;
+    margin:0 30px;
+    position:relative;
+}
+
+.input_buscador{
+    width:100%;
+    padding:12px 18px;
+    border:none;
+    border-radius:30px;
+    font-size:16px;
+    outline:none;
+    background:white;
+}
+
+.input_buscador:focus{
+    box-shadow:0 0 8px rgba(255,255,255,.35);
+}
+
+.boton_busqueda{
+    margin-left:10px;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    background:#2c2c2c;
+    color:white;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.boton_busqueda:hover{
+    background:#505050;
+}
+        
+        .barra-busqueda {
+            height:40px;
+            border-radius: 10px 10px 10px 10px;
+            border:1px solid black;
+            padding-left: 10px;
+            font-size: 16px;
+            width: 50%;
+            cursor: pointer;
+            flex:1;
+        }
+        /*contenedor iconos */
+        .Iconos 
+        {   
+            display: flex;
+            gap: 25px;
+            cursor: pointer;
+            align-items: center;
+        }
+        /*iconos*/
+        .Iconos img 
+        {
+            width: 55px;
+            height:auto;
+        }
+        /*Menu movil*/
+        .menu-movil
+        {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+        }
+        /*Menu movil activo*/
+        .Iconos.mostrar
+        {
+            display:flex;
+            flex-direction: column;
+            position:absolute;
+            top: 90px;
+            right: 15px;
+            background:black;
+            padding:15px;
+            border-radius:10px;
+            gap:15px;
+        }
+        /*Contenedor de los menus*/
+        .contenedor-menus 
+        {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 80%;
+            margin: 20px auto 40px auto;
+            justify-content: center;
+        }
+        /*Menu Mujer*/
+        #mujer, #hombre 
+        {
+            font-family: "Street Wise";
+            color: black;
+            flex: 1;
+            width: 70%;
+            height: 40px;
+            border-radius: 10px 10px 10px 10px;
+            border:1px solid black;
+            font-size: 16px;
+            cursor: pointer;
+            padding-left: 10px;
+            border-color: black;
+        }
+        /*Contenedor de las imagenes*/
+        .contenedor-imagenes
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 80px;
+            padding: 20px;
+        }
+        /*Imagenes*/
+        .contenedor-imagenes img
+        {
+            width: 300px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px 20px 20px 20px;
+        }
+        /*Redes Sociales*/
+        .redes-sociales 
+        {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            bottom: 20px;
+        }
+        /*Body*/
+        body
+        {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        /*imagen de fonfo en usuarioi*/
+        .pagina-usuario
+        {
+           background-image: url("imagenes/Graffiti.jpg");
+           background-size: cover;
+           background-position:center;
+           background-repeat: no-repeat;
+           opacity:1;
+           backdrop-filter: blur(8px);
+           transition: 1s;
+        }
+        /*tabla usuario*/
+        .tabla-usuario
+        {
+            width:100%;
+            height: 40px;
+            margin:40px auto;
+            border-collapse: collapse;
+            font-family: "Street Wise";
+            font-size: 25px;
+            color:rgb(255, 255, 255);
+            text-align: left;
+            align-items: center;
+        }
+        /*estilo de cuadro de texto*/
+        
+        input[required]:focus:valid,
+        textarea[required]:focus:valid,
+        select[required]:focus:valid
+        {
+        border: 2px solid green;
+        box-shadow: 0 0 5px green;
+        }
+
+        input[required]:focus:invalid,
+        textarea[required]:focus:invalid,
+        select[required]:focus:invalid
+        {
+        border: 2px solid red;
+        box-shadow: 0 0 5px red;
+        }
+        .boton
+        {
+            width: 40%;
+            height: 35px;
+            border:1px solid black;
+            border-radius: 10px 10px 10px 10px;
+            margin:10px auto;
+            display:flex;
+            justify-content: center;
+            font-family: "Street Wise";
+            text-align: center;
+            align-items:center;
+        }
+        /*texto registrar*/
+        .texto-registrar
+        {
+            font-family: "Street Wise";
+            width:40%;
+            text-align: center;
+            align-items:center;
+            margin:auto;
+            font-size: 30px;
+            color:black;
+        }
+        /*boton registrar*/
+        .boton-registrar
+        {
+             width: 40%;
+            height: 35px;
+            border:1px solid black;
+            border-radius: 10px 10px 10px 10px;
+            margin:10px auto;
+            display:flex;
+            justify-content: center;
+            font-family: "Street Wise";
+            text-align: center;
+            align-items:center;
+            display:flex;
+
+        }
+        .boton-pagina-registrar
+        {
+            width: 40%;
+            height: 35px;
+            border:1px solid black;
+            border-radius: 10px 10px 10px 10px;
+            margin:10px auto;
+            display:flex;
+            justify-content: center;
+            font-family: "Street Wise";
+            text-align: center;
+            align-items:center;
+        }
+        .buscador-usuario
+        {
+            width: 95%;
+            height: 35px;
+        }
+        /*pie de pagina*/
+        .footer
+        {
+          font-family: 'Street Wise';
+          text-align: center;
+          font-size:clamp(20px, 3vw, 30px);
+          font-size:20px;
+          color: white;
+          margin-top: 40px;
+          background: black;
+          border-top: 1px solid black;
+          padding: 20px;
+          width: 100%;
+          min-height: 110px;
+          border-radius: 20px;
+          position: relative;
+          box-sizing: border-box;
+        }
+        /*Parte superior del titulo e iconos*/
+        header
+        {
+            display:flex;
+            justify-content:space-between;
+            border:1px solid black;
+            background: black;
+            width:100%;
+            min-height: 180px;
+            border-radius: 20px;
+            position: relative;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        main 
+        {
+            flex:1;
+        }
+        /*Estilos usados para el index*/
+   /*-----------------------------------------------*/
+        .h1-usuario
+        {
+            font-family:'Street Wise';
+            font-size: 45px;
+            color: white;
+            text-align: center; 
+            margin-top: 20px;
+        
+        }
+        /*cuadro del usuario*/
+         .contenedor-usuario
+         {
+            border:1px solid black;
+            padding:20px 20px;
+            background: black;
+            width: 45%;
+            min-height: 450px;
+            margin:80px auto;
+            border-radius: 40px 40px 40px 40px;
+            -moz-border-radius: 20px 20px 20px 20px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+         }
+/*estilos para catalogo*/
+/*Titulo del catalogo*/
+         .titulo-catalogo 
+         {
+        font-size: 30px;
+        color: black;
+        text-align: center;
+        margin-top: 40px;
+        font-family: 'Street Wise';
+         }
+         /*Contenedor de los productos del catalogo*/
+         .contenedor-productos 
+         {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            padding: 40px;
+            width: 100%;
+            box-sizing: border-box;
+         }
+            /*Descripcion del producto*/
+        .descripcion
+        {
+            font-family: 'Street Wise';
+            font-size: 18px;
+            color: black;
+            text-align: center;
+            margin-top: 10px;
+         }
+         /*tarjeta producto*/
+         .producto
+         {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 100%;
+                max-width: 950px;
+                background-color: white;
+                border: 2px solid black;
+                border-radius: 20px 20px 20px 20px;
+                padding: 20px;
+                gap:25px;
+                box-sizing: border-box;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+         }
+         /*contenedor caracterizticas*/
+         .Contenedor-caracterizticas
+         {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            flex: 1;
+         }
+        /*imagen producto*/
+        .producto img
+        {
+            width: 25%;
+            height: 220px;
+            border-radius: 20px 20px 20px 20px;
+            object-fit: cover;
+            flex-shrink: 0;
+            border:1 px solid black;
+        }
+        /*nombre producto*/
+        .producto h3
+        {
+            font-family: 'Street Wise';
+            font-size: 22px;
+            color: black;
+            margin-top: 15px;
+        }
+        /*precio producto*/
+        .precio
+        {
+            font-family: 'Street Wise';
+            font-size: 20px;
+            color: black;
+            font-weight: bold;
+        }
+        /*boton comprar*/
+        .boton-comprar
+        {
+            width: 100%;
+            height: 40px;
+            border:none;
+            border-radius: 10px 10px 10px 10px;
+            cursor: pointer;
+            font-family: 'Street Wise';
+            font-size: 16px;
+            background: black;
+            color: white;
+        }
+        /*stock producto*/
+        .stock
+        {
+            font-family: 'Street Wise';
+            font-size: 16px;
+            color: black;
+            margin-top: 10px;
+        }
+        /*stock cantidad*/
+        .cantidad
+        {
+            font-family:'Street Wise';
+            font-size: 16px;
+            color: black;
+            margin-top: 10px;
+            border:1px solid black;
+            border-radius: 10px 10px 10px 10px;
+            padding: 5px;
+        }
+        /*estilos para el carrito de compras*/
+        .Contenedor-compras
+         {
+            display: flex;
+            justify-content:space-between;
+            align-items: flex-start;
+            width: 80%;
+            margin: 40px auto;
+            gap: 30px;
+         }
+         /*contenedor de informacion de compras*/
+         .informacion-compras
+         {
+            width: 50%;
+            background: black;
+            border:1px solid black;
+            border-radius: 20px 20px 20px 20px;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-family: 'Street Wise';
+            color: white;
+         }
+         /*contenedor de informacion de pago*/
+         .informacion-pago
+         {
+            width: 40%;
+            background: black;
+            border:1px solid black;
+            border-radius: 20px 20px 20px 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            gap: 20px;
+            font-family: 'Street Wise';
+            color: white;
+         }
+            /*item del carrito*/
+         .item-carrito
+         {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom:1px solid black;
+            padding-bottom: 10px;
+            font-family: 'Street Wise';
+            color:white;
+         }
+         .buscador-carrito
+         {
+            width: 100%;
+            height: 35px;
+            border:1px solid black;
+            border-radius: 10px 10px 10px 10px;
+            padding-left: 10px;
+            font-size: 16px;
+            background: white;
+            color: black;
+         }
+        .Gracias
+         {
+            text-align: center;
+            font-family:"Street Wise";
+            color:black;
+            font-size:50PX;
+         }
+         /* Panel administrador */
+
+.panel-admin
+{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.panel-admin button
+{
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+table
+{
+    margin-bottom: 40px;
+}
+
+th, td
+{
+    padding: 10px;
+}
+         /*Formato celular*/
+        @media (max-width: 768px) {
+        .h1{
+        font-size:40px;
+        top: 220px;
+    }
+
+    .logo{
+        width:120px;
+    }
+
+    input{
+        width:100%;
+    }
+
+    .Iconos img{
+        width:30px;
+        height:30px;
+    }
+    .menu-movil
+    {
+    display:block;
+    }
+
+    .Iconos
+    
+    {
+    display:none;
+    }
+    .contenedor-menus{
+        position: static;
+        margin-top:50px;
+        flex-direction: column;
+    }
+
+    .contenedor-imagenes{
+        margin-top:40px;
+    }
+
+    .redes-sociales{
+        left:auto;
+        right:10px;
+    }   
+        }
